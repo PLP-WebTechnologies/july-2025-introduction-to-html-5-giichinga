@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="A simple and accessible HTML5 webpage with semantic structure and SEO-friendly content." />
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic tags, web development" />
+  <meta name="author" content="Your Name" />
+  
+  <title>Accessible Semantic Webpage</title>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Welcome to My Webpage</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" accesskey="a">About</a></li>
+        <li><a href="#services" accesskey="s">Services</a></li>
+        <li><a href="#contact" accesskey="c">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>We are committed to building accessible and SEO-friendly websites using modern HTML5 best practices.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <article>
+        <h3>Web Development</h3>
+        <p>We create responsive, semantic, and user-friendly websites.</p>
+      </article>
+      <article>
+        <h3>Accessibility Audits</h3>
+        <p>We help ensure your site meets WCAG guidelines for all users.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="#" method="post" aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
